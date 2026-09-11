@@ -1,0 +1,19 @@
+# Aurum Ghana Website
+
+## Overview
+Aurum Ghana is a luxury Ghanaian jewelry e-commerce platform offering gold, silver, diamond, beaded, and traditional African-inspired jewelry pieces.
+
+## Pages
+- Homepage (index.html) - Hero, featured products, categories
+- Category (category.html) - Product listing with filters
+- Product (product.html) - Product detail page
+- Cart (cart.html) - Shopping cart
+- Checkout (checkout.html) - Order checkout
+- Login/Register - Authentication pages
+- Account - User profile management
+- Admin - Dashboard and management
+
+## Technical Stack
+- Frontend: HTML5, CSS3, JavaScript (ES6+)
+- No framework dependencies
+- Backend API integration via api.js client

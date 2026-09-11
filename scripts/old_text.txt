@@ -1,0 +1,1 @@
+    async function initCategoryPage() {\n\n        var g = document.getElementById(" product-grid\), cnt = document.getElementById(\product-count\), sort = document.getElementById(\sort-select\);\n\n if (!g) return;

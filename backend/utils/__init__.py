@@ -1,0 +1,3 @@
+"""
+Aurum Ghana - Utilities
+"""

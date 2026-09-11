@@ -1,0 +1,150 @@
+# =====================================================
+# Aurum Ghana Helm Chart - Default Values
+# =====================================================
+
+# Default image to use
+image:
+  repository: aurumghana/api
+  tag: latest
+  pullPolicy: IfNotPresent
+
+imageFrontend:
+  repository: aurumghana/frontend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+# Number of backend replicas
+replicaCount: 3
+
+# Backend service configuration
+backend:
+  name: api
+  containerPort: 5000
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 5000
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 250m
+    limits:
+      memory: 512Mi
+      cpu: 500m
+  livenessProbe:
+    path: /health
+    initialDelaySeconds: 30
+    periodSeconds: 30
+  readinessProbe:
+    path: /health
+    initialDelaySeconds: 10
+    periodSeconds: 10
+  env:
+    FLASK_ENV: production
+    FLASK_DEBUG: 0
+    LOG_LEVEL: INFO
+
+# Frontend service configuration
+frontend:
+  name: web
+  containerPort: 80
+  service:
+    type: ClusterIP
+    port: 80
+  resources:
+    requests:
+      memory: 64Mi
+      cpu: 100m
+    limits:
+      memory: 128Mi
+      cpu: 200m
+
+# PostgreSQL configuration
+postgresql:
+  enabled: true
+  image: postgres:16-alpine
+  persistence:
+    enabled: true
+    size: 20Gi
+    storageClass: ""
+  auth:
+    database: aurum_ghana
+    username: aurum
+    existingSecret: aurum-postgres-secret
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 250m
+    limits:
+      memory: 1Gi
+      cpu: 1000m
+
+# Application secrets (override in production)
+secret:
+  # Set these via your secret manager (Vault, AWS Secrets Manager, etc.)
+  jwtSecretKey: ""           # REPLACE ME
+  postgresPassword: ""        # REPLACE ME
+  paystackSecretKey: ""       # REPLACE ME
+  paystackPublicKey: ""       # REPLACE ME
+  paystackWebhookSecret: ""   # REPLACE ME
+  smtpUser: ""                # REPLACE ME
+  smtpPass: ""                # REPLACE ME
+
+# ConfigMap values
+config:
+  frontendUrl: "https://aurumghana.com"
+  corsOrigins: "https://aurumghana.com,https://www.aurumghana.com"
+  paystackCallbackUrl: "https://aurumghana.com/payment/callback"
+  smtpHost: "smtp.gmail.com"
+  smtpPort: 587
+  emailFrom: "noreply@aurumghana.com"
+
+# Ingress configuration
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  hosts:
+    - host: api.aurumghana.com
+      paths:
+        - path: /
+          pathType: Prefix
+          backend: backend
+    - host: aurumghana.com
+      paths:
+        - path: /
+          pathType: Prefix
+          backend: frontend
+    - host: www.aurumghana.com
+      paths:
+        - path: /
+          pathType: Prefix
+          backend: frontend
+  tls:
+    - hosts:
+        - api.aurumghana.com
+        - aurumghana.com
+        - www.aurumghana.com
+      secretName: aurum-tls
+
+# Service account
+serviceAccount:
+  create: true
+  name: aurum-ghana
+
+# Pod-level configuration
+podAnnotations: {}
+podSecurityContext:
+  fsGroup: 1000
+  runAsNonRoot: true
+  runAsUser: 1000
+
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: true
+  capabilities:
+    drop:
+      - ALL

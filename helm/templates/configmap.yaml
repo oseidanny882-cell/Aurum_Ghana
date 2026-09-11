@@ -1,0 +1,20 @@
+{{- /*
+Aurum Ghana - ConfigMap
+*/ -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "aurum-ghana.fullname" . }}-config
+  namespace: {{ .Release.Namespace }}
+  labels:
+    {{- include "aurum-ghana.labels" . | nindent 4 }}
+data:
+  FLASK_ENV: {{ .Values.backend.env.FLASK_ENV | quote }}
+  LOG_LEVEL: {{ .Values.backend.env.LOG_LEVEL | quote }}
+  FRONTEND_URL: {{ .Values.config.frontendUrl | quote }}
+  CORS_ORIGINS: {{ .Values.config.corsOrigins | quote }}
+  PAYSTACK_CALLBACK_URL: {{ .Values.config.paystackCallbackUrl | quote }}
+  SMTP_HOST: {{ .Values.config.smtpHost | quote }}
+  SMTP_PORT: {{ .Values.config.smtpPort | quote }}
+  EMAIL_FROM: {{ .Values.config.emailFrom | quote }}
+  DATABASE_URL: "postgresql+psycopg2://{{ .Values.postgresql.auth.username }}@{{ include "aurum-ghana.fullname" . }}-postgres:{{ 5432 }}/{{ .Values.postgresql.auth.database }}"

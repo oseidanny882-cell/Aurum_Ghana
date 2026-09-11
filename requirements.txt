@@ -1,0 +1,36 @@
+# Aurum Ghana Backend - Python dependencies
+# Web framework
+Flask==3.0.3
+flask-cors==4.0.1
+flask-jwt-extended==4.6.0
+flask-limiter==3.8.0
+flask-sqlalchemy==3.1.1
+flask-migrate==4.0.7
+
+# Database
+psycopg2-binary==2.9.9
+SQLAlchemy==2.0.32
+alembic==1.13.2
+
+# Security
+bcrypt==4.2.0
+PyJWT==2.9.0
+cryptography==43.0.0
+redis==8.1.0
+
+# Validation & serialization
+marshmallow==3.22.0
+
+# Payments
+requests==2.32.3
+
+# Email
+python-dotenv==1.0.1
+
+# Production server
+gunicorn==22.0.0
+
+# Dev / test
+pytest==8.3.2
+flask-bcrypt==1.0.1
+pyotp==2.9.0

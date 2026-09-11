@@ -1,0 +1,32 @@
+# ============================================================
+# Aurum Ghana - Terraform Variables (copy to terraform.tfvars)
+# ============================================================
+# DO NOT commit terraform.tfvars to version control!
+# ============================================================
+
+# Cluster access
+kubeconfig_path = "~/.kube/config"
+
+# Namespace
+namespace = "aurum-ghana"
+
+# Images (update with your registry paths after docker push)
+backend_image_repository = "ghcr.io/aurumghana/aurum-ghana"
+backend_image_tag        = "latest"
+frontend_image_repository = "ghcr.io/aurumghana/aurum-ghana-frontend"
+frontend_image_tag       = "latest"
+
+# Application
+replica_count = 3
+frontend_url  = "https://aurumghana.com"
+cors_origins  = "https://aurumghana.com,https://www.aurumghana.com"
+
+# --- SECRETS (REQUIRED — set real values before apply) ---
+
+jwt_secret_key          = "CHANGE_ME_generate_with: openssl rand -base64 64"
+postgres_password       = "CHANGE_ME_generate_with: openssl rand -base64 32"
+paystack_secret_key     = "sk_live_..."
+paystack_public_key     = "pk_live_..."
+paystack_webhook_secret = "whsec_..."
+smtp_user               = "your@gmail.com"
+smtp_pass               = "app-specific-password"

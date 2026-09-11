@@ -1,0 +1,50 @@
+import pathlib
+
+t = pathlib.Path("c:/Users/Codewithme/jewelry-gh/frontend/scripts.js").read_text(encoding="utf-8")
+b = pathlib.Path("c:/Users/Codewithme/jewelry-gh/backend/api/products.py").read_text(encoding="utf-8")
+c = pathlib.Path("c:/Users/Codewithme/jewelry-gh/frontend/category.html").read_text(encoding="utf-8")
+s = pathlib.Path("c:/Users\Codewithme/jewelry-gh/frontend/styles.css").read_text(encoding="utf-8")
+
+print("=" * 60)
+print("SEARCH FEATURE VERIFICATION")
+print("=" * 60)
+
+print()
+print("1. scripts.js:")
+print("   - initSearch function defined:", "function initSearch()" in t)
+print("   - search-btn click handler:", 'getElementById("search-btn")' in t)
+print("   - search-overlay handling:", 'getElementById("search-overlay")' in t)
+print("   - search form submit handler:", 'getElementById("search-form")' in t)
+print("   - Live search on input:", "inp.addEventListener" in t and "'input'" in t)
+print("   - Pre-fills search from URL:", "u.get('search')" in t or 'u.get("search")' in t)
+
+print()
+print("2. initCategoryPage:")
+print("   - Reads 'search' from URL:", 'u.get("search")' in t)
+print("   - Sends 'q' to API (backend-compatible):", "p.q = " in t)
+print("   - Highlights active filter from URL:", "currentFilter" in t)
+
+print()
+print("3. Backend products.py:")
+print("   - Accepts 'q' param:", 'request.args.get("q")' in b)
+print("   - Accepts 'search' alias:", 'request.args.get("search")' in b)
+print("   - Searches in name/description/sku:", "Product.name.ilike" in b)
+
+print()
+print("4. category.html:")
+print("   - Has search-btn:", "search-btn" in c)
+print("   - Has search-overlay:", "search-overlay" in c)
+print("   - Has search-form:", "search-form" in c)
+print("   - Has search-input:", "search-input" in c)
+print("   - Has search-close-btn:", "search-close-btn" in c)
+
+print()
+print("5. styles.css:")
+print("   - Has .search-overlay:", ".search-overlay" in s)
+print("   - Has .search-modal:", ".search-modal" in s)
+print("   - Has fadeIn/slideDown animations:", "fadeIn" in s and "slideDown" in s)
+
+print()
+print("=" * 60)
+print("ALL CHECKS COMPLETE")
+print("=" * 60)

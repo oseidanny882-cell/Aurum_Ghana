@@ -1,0 +1,330 @@
+C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_limiter\_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.24.232:5000
+Press CTRL+C to quit
+127.0.0.1 - - [08/Sep/2026 19:11:24] "POST /api/v1/auth/forgot-password HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:12:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:12:08] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:12:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:12:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:13:00] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:13:01] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:15:25] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:42] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:16:47] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:17:06] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:27:46] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:27:46] "POST /api/v1/auth/login HTTP/1.1" 401 -
+127.0.0.1 - - [08/Sep/2026 19:28:13] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:28:13] "POST /api/v1/auth/login HTTP/1.1" 429 -
+127.0.0.1 - - [08/Sep/2026 19:39:14] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:14] "POST /api/v1/auth/login HTTP/1.1" 429 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+C:\Python314\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 16 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+127.0.0.1 - - [08/Sep/2026 19:39:37] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+C:\Python314\Lib\site-packages\jwt\api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 16 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  decoded = self.decode_complete(
+127.0.0.1 - - [08/Sep/2026 19:39:37] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:37] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "OPTIONS /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "OPTIONS /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "POST /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "POST /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:39:55] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/admin/categories HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/admin/suppliers?per_page=500 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/admin/categories HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/admin/suppliers?per_page=500 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "OPTIONS /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:57:28] "GET /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "OPTIONS /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "GET /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:51] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 19:58:54] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/user/profile HTTP/1.1" 401 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/user/profile HTTP/1.1" 401 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "POST /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "POST /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:43] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:46] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:28:54] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:29:19] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+[2026-09-08 20:29:19,788] ERROR in app: Exception on /api/v1/auth/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_limiter\_limits.py", line 326, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users/Codewithme/jewelry-gh\backend\api\auth.py", line 120, in login
+    if not bcrypt.check_password_hash(user.password_hash, password):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_bcrypt.py", line 225, in check_password_hash
+    return hmac.compare_digest(bcrypt.hashpw(password, pw_hash), pw_hash)
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid salt
+[2026-09-08 20:29:19,895] ERROR in app: Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+127.0.0.1 - - [08/Sep/2026 20:29:19] "POST /api/v1/auth/login HTTP/1.1" 500 -
+127.0.0.1 - - [08/Sep/2026 20:29:46] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+[2026-09-08 20:29:46,939] ERROR in app: Exception on /api/v1/auth/login [POST]
+Traceback (most recent call last):
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_cors\extension.py", line 206, in wrapped_function
+    return cors_after_request(app_any.make_response(f(*args, **kwargs)))
+                                                    ~^^^^^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_limiter\_limits.py", line 326, in __inner
+    return cast(R, flask.current_app.ensure_sync(obj)(*a, **k))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "c:\Users/Codewithme/jewelry-gh\backend\api\auth.py", line 120, in login
+    if not bcrypt.check_password_hash(user.password_hash, password):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\DON_K\AppData\Roaming\Python\Python314\site-packages\flask_bcrypt.py", line 225, in check_password_hash
+    return hmac.compare_digest(bcrypt.hashpw(password, pw_hash), pw_hash)
+                               ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid salt
+[2026-09-08 20:29:46,944] ERROR in app: Server error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+127.0.0.1 - - [08/Sep/2026 20:29:46] "POST /api/v1/auth/login HTTP/1.1" 500 -
+127.0.0.1 - - [08/Sep/2026 20:39:45] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:39:47] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:43] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:45] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "OPTIONS /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "OPTIONS /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "POST /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "POST /api/v1/auth/logout HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "OPTIONS /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "OPTIONS /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "OPTIONS /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "GET /api/v1/products?filter=new&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "GET /api/v1/products?filter=best&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:51:48] "GET /api/v1/products?featured=true&limit=4 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:14] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "POST /api/v1/auth/login HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/admin/suppliers?per_page=500 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/admin/categories HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/admin/categories HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/admin/suppliers?per_page=500 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "OPTIONS /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 20:52:15] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "OPTIONS /api/v1/admin/products/sku-sets-70 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "DELETE /api/v1/admin/products/sku-sets-70 HTTP/1.1" 401 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "OPTIONS /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "POST /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "DELETE /api/v1/admin/products/sku-sets-70 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "OPTIONS /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:55] "GET /api/v1/admin/products?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "OPTIONS /api/v1/admin/orders?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:10:58] "GET /api/v1/admin/orders?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:00] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:02] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:02] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:02] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:02] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:02] "GET /api/v1/admin/orders?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "OPTIONS /api/v1/admin/orders?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:04] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:05] "GET /api/v1/admin/orders?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:12] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:15] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:15] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:15] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:16] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "OPTIONS /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:17] "GET /api/v1/admin/users?page=1&per_page=20 HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "OPTIONS /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:23] "GET /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:35] "OPTIONS /api/v1/admin/suppliers/b2c6e5e6-c3d3-4cc2-8a98-914c99d3fb9c HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:35] "DELETE /api/v1/admin/suppliers/b2c6e5e6-c3d3-4cc2-8a98-914c99d3fb9c HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:35] "OPTIONS /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:11:35] "GET /api/v1/admin/suppliers HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "GET /api/v1/user/profile HTTP/1.1" 401 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "OPTIONS /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "POST /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:38] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:40] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:40] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:40] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:40] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [08/Sep/2026 21:26:40] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "GET /api/v1/user/profile HTTP/1.1" 401 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "POST /api/v1/auth/refresh HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "GET /api/v1/cart HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "GET /api/v1/user/profile HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:09] "OPTIONS /api/v1/admin/dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [09/Sep/2026 00:07:10] "GET /api/v1/admin/dashboard HTTP/1.1" 200 -
