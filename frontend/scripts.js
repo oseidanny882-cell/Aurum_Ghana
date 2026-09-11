@@ -180,7 +180,7 @@
 
         var ph = p.discount_price ? '<span class="price-current">' + Products.formatPrice(p.discount_price) + '</span><span class="price-original">' + Products.formatPrice(p.price) + '</span>' : '<span class="price-current">' + Products.formatPrice(p.price) + '</span>';
 
-        return '<article class="product-card"><a href="product.html?id=' + encodeURIComponent(p.id) + '" class="product-link"><div class="product-image-wrap"><img src="' + (p.image || '/images/placeholder.png') + '" alt="' + Security.escapeHtml(p.name) + '" loading="lazy" onerror="this.src=\'/images/placeholder.png\'">' + b + '</div><div class="product-info"><p class="product-category">' + Security.escapeHtml(p.category_name || p.category || '') + '</p><h3 class="product-name">' + Security.escapeHtml(p.name) + '</h3><div class="product-price">' + ph + '</div></div></a><button class="btn-quick-add" data-product-id="' + encodeURIComponent(p.id) + '">Add to cart</button></article>';
+        return '<article class="product-card"><a href="product.html?id=' + encodeURIComponent(p.id) + '" class="product-link"><div class="product-image-wrap"><img src="' + (p.image || 'images/placeholder.png') + '" alt="' + Security.escapeHtml(p.name) + '" loading="lazy" onerror="this.src=\'images/placeholder.png\'">' + b + '</div><div class="product-info"><p class="product-category">' + Security.escapeHtml(p.category_name || p.category || '') + '</p><h3 class="product-name">' + Security.escapeHtml(p.name) + '</h3><div class="product-price">' + ph + '</div></div></a><button class="btn-quick-add" data-product-id="' + encodeURIComponent(p.id) + '">Add to cart</button></article>';
 
     }
 
@@ -362,7 +362,7 @@
 
             if (!imgList.length && p.image) imgList = [p.image];
 
-            var placeholderImg = '/images/placeholder.png';
+            var placeholderImg = 'images/placeholder.png';
 
             var galHtml = '<div class="gallery-main"><img id="gallery-main-img" src="' + (imgList[0] || placeholderImg) + '" alt="' + Security.escapeHtml(p.name) + '" onerror="this.src=\'' + placeholderImg + '\'"></div>';
 
@@ -436,7 +436,7 @@
 
                 var up = (i.discount_price && i.discount_price < i.price) ? i.discount_price : i.price;
 
-                return '<div class="cart-item" data-key="' + Security.escapeHtml(i.key) + '"><a href="product.html?id=' + encodeURIComponent(i.product_id) + '"><img src="' + Security.escapeHtml(i.image || "") + '" alt="' + Security.escapeHtml(i.name) + '" onerror="this.src=\'/images/placeholder.png\'" class="cart-item-img"></a><div class="cart-item-info"><a href="product.html?id=' + encodeURIComponent(i.product_id) + '" class="cart-item-name">' + Security.escapeHtml(i.name) + '</a><p class="cart-item-price">' + Products.formatPrice(up) + '</p></div><div class="cart-item-qty"><button class="qty-btn qty-btn-sm" data-action="minus">&#8722;</button><input type="number" value="' + i.quantity + '" min="1" max="' + i.stock + '" class="qty-input-sm"><button class="qty-btn qty-btn-sm" data-action="plus">+</button></div><div class="cart-item-total">' + Products.formatPrice(up * i.quantity) + '</div><button class="cart-item-remove" data-key="' + Security.escapeHtml(i.key) + '">&times;</button></div>';
+                return '<div class="cart-item" data-key="' + Security.escapeHtml(i.key) + '"><a href="product.html?id=' + encodeURIComponent(i.product_id) + '"><img src="' + Security.escapeHtml(i.image || "") + '" alt="' + Security.escapeHtml(i.name) + '" onerror="this.src=\'images/placeholder.png\'" class="cart-item-img"></a><div class="cart-item-info"><a href="product.html?id=' + encodeURIComponent(i.product_id) + '" class="cart-item-name">' + Security.escapeHtml(i.name) + '</a><p class="cart-item-price">' + Products.formatPrice(up) + '</p></div><div class="cart-item-qty"><button class="qty-btn qty-btn-sm" data-action="minus">&#8722;</button><input type="number" value="' + i.quantity + '" min="1" max="' + i.stock + '" class="qty-input-sm"><button class="qty-btn qty-btn-sm" data-action="plus">+</button></div><div class="cart-item-total">' + Products.formatPrice(up * i.quantity) + '</div><button class="cart-item-remove" data-key="' + Security.escapeHtml(i.key) + '">&times;</button></div>';
 
             }).join("");
 
@@ -504,7 +504,7 @@
             if (!overlay) {
                 // No modal on this page, navigate to category with prompt
                 var q = window.prompt("Search products:");
-                if (q && q.trim()) window.location.href = "/category.html?search=" + encodeURIComponent(q.trim());
+                if (q && q.trim()) window.location.href = "category.html?search=" + encodeURIComponent(q.trim());
                 return;
             }
             overlay.hidden = false;
@@ -545,7 +545,7 @@
                 var q = inp ? inp.value.trim() : "";
                 if (q.length < 1) return;
                 // Navigate to category page with search param (preserves ?cat= if any)
-                window.location.href = "/category.html?search=" + encodeURIComponent(q);
+                window.location.href = "category.html?search=" + encodeURIComponent(q);
             });
         }
 
