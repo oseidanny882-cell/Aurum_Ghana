@@ -9,7 +9,8 @@
     // If not set, the hostname-specific defaults below are used.
     // IMPORTANT: when the backend is live, update _defaultProductionApiBase
     // below to the real backend origin (NOT the GitHub Pages origin).
-    const _defaultProductionApiBase = "https://oseidanny882-cell.github.io/Aurum_Ghana/api/v1";
+    const _defaultProductionApiBase = "https://web-production-b4e16.up.railway.app/api/v1";
+
 
     const API_BASE = window.API_BASE_URL
         ? window.API_BASE_URL
