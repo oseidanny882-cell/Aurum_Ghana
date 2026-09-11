@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status - AUTUM LUXE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="payment-callback">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="AUTUM LUXE Home">
+                <span class="logo-mark">AUTUM</span><span class="logo-sub">LUXE</span>
+            </a>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container" style="max-width: 600px; padding: 4rem 1rem; text-align: center;">
+            <div id="status-icon" style="margin-bottom: 2rem;">
+                <div class="spinner" style="width: 64px; height: 64px; border: 4px solid #f3f3f3; border-top: 4px solid #b8860b; border-radius: 50%; margin: 0 auto; animation: spin 1s linear infinite;"></div>
+            </div>
+            <h1 id="status-title" style="font-family: 'Cormorant Garamond', serif;">Verifying payment...</h1>
+            <p id="status-message" style="color: #666; margin: 1rem 0 2rem;">Please wait while we confirm your payment with Paystack.</p>
+            <div id="status-actions" style="display: none; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="order-history.html" class="btn btn-primary">View my orders</a>
+                <a href="index.html" class="btn btn-ghost">Back to home</a>
+            </div>
+        </div>
+    </main>
+    <style>
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .status-success { color: #2e7d32; }
+        .status-failed  { color: #c62828; }
+        .status-icon-big { font-size: 4rem; line-height: 1; }
+    </style>
+    <script src="security.js"></script>
+    <script src="api.js?v=1789000000"></script>
+    <script src="auth.js?v=1789110000"></script>
+    <script>
+        (async function() {
+            "use strict";
+            const iconEl   = document.getElementById("status-icon");
+            const titleEl  = document.getElementById("status-title");
+            const msgEl    = document.getElementById("status-message");
+            const actionsEl = document.getElementById("status-actions");
+
+            const params = new URLSearchParams(window.location.search);
+            const reference = params.get("reference") || params.get("trxref") || "";
+
+            if (!reference) {
+                iconEl.innerHTML = '<div class="status-icon-big status-failed">&#10005;</div>';
+                titleEl.textContent = "Missing payment reference";
+                msgEl.textContent = "No transaction reference was provided. If you were charged, please contact support.";
+                actionsEl.style.display = "flex";
+                return;
+            }
+
+            try {
+                // Acknowledge the callback (Paystack redirect landed here)
+                await window.api.paymentCallback({ reference, trxref: reference });
+                // Then verify the actual payment status with the backend.
+                // In DEMO mode (no real Paystack keys) this returns success
+                // immediately so the full flow can be tested locally.
+                const result = await window.api.verifyPayment(reference);
+                if (result.status === "success") {
+                    iconEl.innerHTML = '<div class="status-icon-big status-success">&#10003;</div>';
+                    titleEl.textContent = "Payment successful!";
+                    const isDemo = reference.startsWith("DEMO_");
+                    msgEl.textContent = isDemo
+                        ? "Demo payment verified. Order confirmed!"
+                        : "Thank you for your order. We'll send a confirmation email shortly.";
+                    if (window.Cart) { try { window.Cart.clear(); } catch {} }
+                } else {
+                    iconEl.innerHTML = '<div class="status-icon-big status-failed">&#10005;</div>';
+                    titleEl.textContent = "Payment not completed";
+                    msgEl.textContent = result.message || "Your payment could not be verified. Please try again or contact support.";
+                }
+            } catch (err) {
+                iconEl.innerHTML = '<div class="status-icon-big status-failed">&#10005;</div>';
+                titleEl.textContent = "Verification failed";
+                msgEl.textContent = err.message || "We could not verify your payment. Please contact support if you were charged.";
+            } finally {
+                actionsEl.style.display = "flex";
+            }
+        })();
+    </script>
+</body>
+</html>
