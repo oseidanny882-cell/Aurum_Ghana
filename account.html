@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - AUTUM LUXE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="account">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="AUTUM LUXE Home">
+                <span class="logo-mark">AUTUM</span><span class="logo-sub">LUXE</span>
+            </a>
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="category.html">Shop All</a></li>
+                    <li><a href="category.html?cat=rings">Rings</a></li>
+                    <li><a href="category.html?cat=necklaces">Necklaces</a></li>
+                    <li><a href="category.html?cat=bracelets">Bracelets</a></li>
+                    <li><a href="category.html?cat=earrings">Earrings</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="account.html" class="icon-btn" aria-label="Account"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+                <a href="cart.html" class="icon-btn" aria-label="Shopping cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><span class="cart-count" id="cart-count" data-count="0"></span></a>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="category.html">Shop All</a><a href="category.html?cat=rings">Rings</a><a href="category.html?cat=necklaces">Necklaces</a><a href="category.html?cat=bracelets">Bracelets</a><a href="category.html?cat=earrings">Earrings</a><a href="account.html">Account</a><a href="cart.html">Cart</a></nav>
+    <main id="main" class="account-page" style="min-height:60vh;">
+        <div class="container">
+            <div class="account-page-header">
+                <div>
+                    <h1 id="account-greeting" style="font-family:var(--font-display);font-size:1.75rem;font-weight:500;margin-bottom:0.25rem;"></h1>
+                    <p id="account-email" style="color:var(--color-text-muted);font-size:0.9375rem;margin:0;"></p>
+                    <p id="account-since" style="color:var(--color-text-muted);font-size:0.8125rem;margin-top:0.125rem;"></p>
+                </div>
+            </div>
+            <div class="account-layout">
+                <aside class="account-sidebar">
+                    <h3 style="font-family:var(--font-display);margin-bottom:1rem;">My Account</h3>
+                    <nav class="account-nav">
+                        <a href="account.html" class="active">Profile</a>
+                        <a href="order-history.html">Order History</a>
+                        <a href="#" id="logout-link">Sign Out</a>
+                    </nav>
+                </aside>
+                <div class="account-main">
+                    <h2 style="font-family:var(--font-display);font-size:1.25rem;margin-bottom:1.25rem;">Profile</h2>
+                    <div class="alert" id="profile-alert" style="display:none;margin-bottom:1rem;"></div>
+                    <form id="profile-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first_name">First Name</label>
+                                <input type="text" id="first_name" name="first_name" required autocomplete="given-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" required autocomplete="family-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <p class="form-hint">Changing your email will require re-verification.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            <p class="form-hint">For order updates and delivery. Ghanaian mobile numbers accepted.</p>
+                        </div>
+                        <p class="form-hint" style="margin-top:0.5rem;">Shipping addresses are managed at checkout. <a href="order-history.html" style="color:var(--color-accent);">View past orders →</a></p>
+                        <button type="submit" class="btn btn-primary" id="profile-submit" style="margin-top:0.75rem;">Save Changes</button>
+                    </form>
+                    <hr style="margin:2rem 0;border:none;border-top:1px solid var(--color-border);">
+                    <h3 style="font-family:var(--font-display);font-size:1.125rem;margin-bottom:1rem;">Change Password</h3>
+                    <div class="alert" id="password-alert" style="display:none;margin-bottom:1rem;"></div>
+                    <form id="password-form" novalidate>
+                        <div class="form-group">
+                            <label for="current_password">Current Password</label>
+                            <input type="password" id="current_password" name="current_password" required autocomplete="current-password">
+                        </div>
+                        <div class="form-group">
+                            <label for="new_password">New Password</label>
+                            <input type="password" id="new_password" name="new_password" required autocomplete="new-password">
+                            <p class="form-hint">Minimum 12 characters. Include at least one letter and one number.</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_new_password">Confirm New Password</label>
+                            <input type="password" id="confirm_new_password" name="confirm_new_password" required autocomplete="new-password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="password-submit">Update Password</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col"><h4>AUTUM LUXE</h4><p>Handcrafted jewelry celebrating Ghanaian heritage and modern elegance. Every piece tells a story.</p></div>
+                <div class="footer-col"><h4>Shop</h4><ul><li><a href="category.html">All Products</a></li><li><a href="category.html?cat=rings">Rings</a></li><li><a href="category.html?cat=necklaces">Necklaces</a></li><li><a href="category.html?cat=bracelets">Bracelets</a></li><li><a href="category.html?cat=earrings">Earrings</a></li></ul></div>
+                <div class="footer-col"><h4>Help</h4><ul><li><a href="#">Shipping &amp; Returns</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Care Instructions</a></li><li><a href="#">Contact Us</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><ul><li>Accra, Ghana</li><li>+233 XX XXX XXXX</li><li>hello@aurum-ghana.local</li></ul></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AUTUM LUXE. All rights reserved.</p>
+                <ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul>
+            </div>
+        </div>
+    </footer>
+    <div id="toast-container" aria-live="assertive" aria-atomic="true"></div>
+    <script src="security.js?v=1788613000"></script>
+    <script src="api.js?v=2"></script>
+    <script src="auth.js?v=1789110000"></script>
+    <script src="cart.js?v=1789200000"></script>
+    <script src="scripts.js?v=1788613000"></script>
+    <script>
+    (function() {
+        'use strict';
+        if (!sessionStorage.getItem('access_token')) {
+            window.location.href = 'login.html';
+            return;
+        }
+        try {
+            var u = JSON.parse(sessionStorage.getItem('user') || '{}');
+            var nameEl = document.getElementById('account-greeting');
+            if (nameEl && (u.first_name || u.last_name)) {
+                nameEl.textContent = 'Hello, ' + (u.first_name || '') + ' ' + (u.last_name || '');
+            }
+            if (u.email) document.getElementById('account-email').textContent = u.email;
+            if (u.created_at) {
+                var d = new Date(u.created_at);
+                if (!isNaN(d)) {
+                    var el = document.getElementById('account-since');
+                    if (el) el.textContent = 'Member since ' + d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+                }
+            }
+        } catch(e) {}
+
+        function populate(user) {
+            if (!user) return;
+            ['first_name','last_name'].forEach(function(f) {
+                var el = document.getElementById(f);
+                if (el) el.value = user[f] || '';
+            });
+            ['email','phone'].forEach(function(f) {
+                var el = document.getElementById(f);
+                if (el) el.value = user[f] || '';
+            });
+        }
+        window.api.getProfile().then(populate).catch(function(){});
+
+        var pForm = document.getElementById('profile-form');
+        if (pForm) {
+            pForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('profile-submit');
+                var al = document.getElementById('profile-alert');
+                var d = {
+                    first_name: pForm.first_name.value.trim(),
+                    last_name:  pForm.last_name.value.trim(),
+                    email:      pForm.email.value.trim(),
+                    phone:      pForm.phone.value.trim() || null,
+                };
+                if (!d.first_name || !d.last_name) { al.textContent = 'First and last name are required.'; al.className = 'alert alert-error'; al.style.display = 'block'; return; }
+                if (!window.Security.isValidEmail(d.email)) { al.textContent = 'Please enter a valid email address.'; al.className = 'alert alert-error'; al.style.display = 'block'; return; }
+                btn.disabled = true; btn.textContent = 'Saving...';
+                window.api.updateProfile(d).then(function(updated) {
+                    localStorage.setItem('user', JSON.stringify(updated));
+                    if (window.Auth) window.Auth.user = updated;
+                    populate(updated);
+                    al.textContent = 'Profile updated successfully.'; al.className = 'alert alert-success'; al.style.display = 'block';
+                    if (window.toast) window.toast('Profile updated successfully.', 'success');
+                }).catch(function(err) {
+                    al.textContent = err.message || 'Update failed.'; al.className = 'alert alert-error'; al.style.display = 'block';
+                }).finally(function() { btn.disabled = false; btn.textContent = 'Save Changes'; });
+            });
+        }
+
+        var pwForm = document.getElementById('password-form');
+        if (pwForm) {
+            pwForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('password-submit');
+                var al = document.getElementById('password-alert');
+                var cur = pwForm.current_password.value;
+                var npw = pwForm.new_password.value;
+                var cnp = pwForm.confirm_new_password.value;
+                if (npw.length < 12) { al.textContent = 'New password must be at least 12 characters.'; al.className = 'alert alert-error'; al.style.display = 'block'; return; }
+                if (npw !== cnp) { al.textContent = 'New passwords do not match.'; al.className = 'alert alert-error'; al.style.display = 'block'; return; }
+                btn.disabled = true; btn.textContent = 'Updating...';
+                window.api.changePassword({ current_password: cur, new_password: npw }).then(function() {
+                    pwForm.reset();
+                    al.textContent = 'Password updated successfully.'; al.className = 'alert alert-success'; al.style.display = 'block';
+                    if (window.toast) window.toast('Password updated successfully.', 'success');
+                }).catch(function(err) {
+                    al.textContent = err.message || 'Password update failed.'; al.className = 'alert alert-error'; al.style.display = 'block';
+                }).finally(function() { btn.disabled = false; btn.textContent = 'Update Password'; });
+            });
+        }
+
+        var logoutLink = document.getElementById('logout-link');
+        if (logoutLink) {
+            logoutLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                (window.Auth ? window.Auth.logout() : Promise.resolve()).then(function() { window.location.href = 'login.html'; });
+            });
+        }
+    })();
+    </script>
+</body>
+</html>

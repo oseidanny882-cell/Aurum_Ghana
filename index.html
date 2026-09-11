@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTUM LUXE � Premium Jewelry | Curated Pieces, Nationwide Delivery</title>
+    <meta name="description" content="AUTUM LUXE offers curated, premium jewelry with transparent GHS pricing and nationwide delivery across Ghana.">
+    <meta name="keywords" content="Ghana jewelry, GHS, rings, necklaces, bracelets, earrings, Accra, Kumasi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oseidanny882-cell.github.io/Aurum_Ghana/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AUTUM LUXE � Jewelry that makes the moment">
+    <meta property="og:description" content="Curated jewelry, transparent GHS pricing, nationwide delivery in Ghana.">
+    <meta property="og:image" content="og-image.png">
+    <meta property="og:url" content="https://oseidanny882-cell.github.io/Aurum_Ghana/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AUTUM LUXE � Jewelry that makes the moment">
+    <meta name="twitter:description" content="Curated jewelry, transparent GHS pricing, nationwide delivery in Ghana.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-page="home">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner container">
+            <a href="index.html" class="logo" aria-label="AUTUM LUXE Home">
+                <span class="logo-mark">AUTUM</span><span class="logo-sub">LUXE</span>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Shop</a></li>
+                    <li><a href="category.html?cat=rings">Rings</a></li>
+                    <li><a href="category.html?cat=necklaces">Necklaces</a></li>
+                    <li><a href="category.html?cat=bracelets">Bracelets</a></li>
+                    <li><a href="category.html?cat=earrings">Earrings</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="account.html" class="icon-btn" aria-label="Account">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+                </a>
+                <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="category.html">Shop All</a>
+        <a href="category.html?cat=rings">Rings</a>
+        <a href="category.html?cat=necklaces">Necklaces</a>
+        <a href="category.html?cat=bracelets">Bracelets</a>
+        <a href="category.html?cat=earrings">Earrings</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="account.html">Account</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero" aria-label="Hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-inner container">
+                <p class="eyebrow">AUTUM LUXE � EST. 2026</p>
+                <h1 class="hero-title">Jewelry that makes the moment.</h1>
+                <p class="hero-sub">Curated pieces, transparent GHS pricing and nationwide delivery across Ghana.</p>
+                <div class="hero-cta">
+                    <a href="category.html" class="btn btn-primary">Shop collection</a>
+                    <a href="category.html?filter=new" class="btn btn-ghost">Explore new arrivals</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="section container" id="new-arrivals">
+            <header class="section-head">
+                <h2>New arrivals</h2>
+                <a href="category.html?filter=new" class="link-arrow">View all ?</a>
+            </header>
+            <div class="product-grid" id="grid-new" aria-live="polite"></div>
+        </section>
+
+        <!-- Best Sellers -->
+        <section class="section container" id="best-sellers">
+            <header class="section-head">
+                <h2>Best sellers</h2>
+                <a href="category.html?filter=best" class="link-arrow">View all ?</a>
+            </header>
+            <div class="product-grid" id="grid-best"></div>
+        </section>
+
+        <!-- Shop by Category -->
+        <section class="section container" id="categories">
+            <header class="section-head">
+                <h2>Shop by category</h2>
+            </header>
+            <div class="cat-grid">
+                <a href="category.html?cat=rings" class="cat-card">
+                    <div class="cat-img" data-cat="rings"></div>
+                    <h3>Rings</h3>
+                </a>
+                <a href="category.html?cat=necklaces" class="cat-card">
+                    <div class="cat-img" data-cat="necklaces"></div>
+                    <h3>Necklaces</h3>
+                </a>
+                <a href="category.html?cat=bracelets" class="cat-card">
+                    <div class="cat-img" data-cat="bracelets"></div>
+                    <h3>Bracelets</h3>
+                </a>
+                <a href="category.html?cat=earrings" class="cat-card">
+                    <div class="cat-img" data-cat="earrings"></div>
+                    <h3>Earrings</h3>
+                </a>
+            </div>
+        </section>
+        <!-- Featured -->
+        <section class="section container" id="featured">
+            <header class="section-head">
+                <h2>Featured jewelry</h2>
+            </header>
+            <div class="product-grid" id="grid-featured"></div>
+        </section>
+
+        <!-- Why shop with us -->
+        <section class="section container" id="why">
+            <header class="section-head">
+                <h2>Why shop with us</h2>
+            </header>
+            <div class="why-grid">
+                <article class="why-card">
+                    <div class="why-icon" aria-hidden="true">&#9670;</div>
+                    <h3>Curated quality</h3>
+                    <p>Every piece is hand-selected and quality-checked before it reaches you.</p>
+                </article>
+                <article class="why-card">
+                    <div class="why-icon" aria-hidden="true">&#9670;</div>
+                    <h3>Transparent GHS pricing</h3>
+                    <p>No hidden fees. What you see is what you pay in Ghana Cedis.</p>
+                </article>
+                <article class="why-card">
+                    <div class="why-icon" aria-hidden="true">&#9670;</div>
+                    <h3>Nationwide delivery</h3>
+                    <p>From Akropong to Bolgatanga, we deliver to every region in Ghana.</p>
+                </article>
+                <article class="why-card">
+                    <div class="why-icon" aria-hidden="true">&#9670;</div>
+                    <h3>Secure payment</h3>
+                    <p>Pay with Mobile Money or card via Paystack &mdash; encrypted and protected.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Customer reviews -->
+        <section class="section container" id="reviews">
+            <header class="section-head">
+                <h2>What customers say</h2>
+            </header>
+            <div class="reviews-grid">
+                <p style="grid-column:1/-1;text-align:center;color:var(--color-text-muted);padding:2rem 0;">Customer reviews will appear here once your store receives its first verified orders.</p>
+            </div>
+        </section>
+        <!-- Delivery info -->
+        <section class="section container" id="delivery">
+            <header class="section-head">
+                <h2>Ghana-wide delivery</h2>
+            </header>
+            <div class="delivery-card">
+                <p>We deliver across all 16 regions of Ghana. Standard delivery is 2&ndash;5 business days, with express options in Accra, Kumasi, Tema, Takoradi, and Cape Coast. Every order is tracked and insured.</p>
+                <ul class="delivery-list">
+                    <li>Accra &amp; Tema &mdash; next day</li>
+                    <li>Kumasi, Cape Coast, Takoradi &mdash; 7&ndash;8 days</li>
+                    <li>Northern, Upper East, Upper West &mdash; 8&ndash;9 days</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Secure payment -->
+        <section class="section container" id="secure">
+            <header class="section-head">
+                <h2>Secure payment</h2>
+            </header>
+            <div class="pay-card">
+                <p>All payments are processed by Paystack with bank-grade encryption. We support Mobile Money (MTN, Vodafone, AirtelTigo) and card payments. We never store your full card details.</p>
+                <div class="pay-badges">
+                    <span class="badge">Paystack</span>
+                    <span class="badge">MTN MoMo</span>
+                    <span class="badge">Vodafone Cash</span>
+                    <span class="badge">Visa</span>
+                    <span class="badge">Mastercard</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section container" id="newsletter">
+            <div class="newsletter-card">
+                <h2>Stay in the loop</h2>
+                <p>Sign up for new arrivals, exclusive offers and styling notes.</p>
+                <form class="newsletter-form" id="newsletter-form" novalidate>
+                    <label for="newsletter-email" class="sr-only">Email address</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required autocomplete="email">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <p class="form-msg" id="newsletter-msg" role="status"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">AUTUM</span><span class="logo-sub">LUXE</span>
+                </a>
+                <p>Premium jewelry with transparent GHS pricing and nationwide delivery in Ghana.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="category.html?cat=rings">Rings</a></li>
+                    <li><a href="category.html?cat=necklaces">Necklaces</a></li>
+                    <li><a href="category.html?cat=bracelets">Bracelets</a></li>
+                    <li><a href="category.html?cat=earrings">Earrings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer</h4>
+                <ul>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="order-history.html">Orders</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="SECURITY.md">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Email: hello@aurum-ghana.local</p>
+                <p>Phone: +233 XX XXX XXXX</p>
+                <p>Accra, Ghana</p>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 AUTUM LUXE. All rights reserved.</p>
+            <ul>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="security.js?v=1788613000"></script>
+    <script src="api.js?v=2"></script>
+    <script src="products.js?v=1788613000"></script>
+    <script src="cart.js?v=1789200000"></script>
+    <script src="auth.js?v=1789110000"></script>
+    <script src="scripts.js?v=1788613000"></script>
+</body>
+</html>
