@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /admin*.html
-Disallow: /checkout.html
-Disallow: /cart.html
-Disallow: /account.html
-Disallow: /order-history.html
-Allow: /
-
-Sitemap: https://oseidanny882-cell.github.io/Aurum_Ghana/sitemap.xml
