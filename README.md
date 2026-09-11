@@ -45,3 +45,4 @@ Chrome/Edge 90+, Firefox 88+, Safari 14+, iOS Safari 14+
 Proprietary - Aurum Ghana 2026"# jewelry-gh" 
 "# aurum_luxe" 
 "# aurum_luxe" 
+"# Aurum_Ghana" 
